@@ -1,0 +1,46 @@
+.inviting_container {
+  background-color: #FBB03B;
+}
+
+.main_container {
+  max-width: 1430px;
+  margin: 0 auto;
+}
+
+.inside_container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+.header_img span {
+  width: 100%!important;
+}
+
+.inviting_block_text {
+  max-width: 850px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  line-height: 45px;
+  color: #FFFFFF;
+}
+
+.btn {
+  width: 200px;
+  height: 60px;
+  border-color: #FFFFFF!important;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 45px;
+}
+
+@media screen and (max-width: 1180px){
+  .inside_container {
+    flex-direction: column!important;
+  }
+
+  .btn {
+    margin-top: 20px!important;
+  }
+}

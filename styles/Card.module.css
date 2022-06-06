@@ -1,0 +1,26 @@
+.card_item {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+}
+
+.card_item_title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 45px;
+  color: #333333;
+}
+
+.card_item_text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+
+@media screen and (max-width: 1540px){
+  .card_item {
+    margin: 10px!important;
+  }
+}

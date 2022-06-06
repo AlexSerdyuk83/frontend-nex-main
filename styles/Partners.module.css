@@ -1,0 +1,24 @@
+.partners_container {
+  background-color: #1B1464;
+  padding: 80px 0;
+}
+
+.main_container {
+  max-width: 1430px;
+  margin: 0 auto;
+}
+
+.inside_container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.partners_item {
+  background: #FFFFFF;
+}
+
+@media screen and (max-width: 700px){
+  .partners_item {
+    margin: 10px;
+  }
+}

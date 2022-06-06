@@ -1,0 +1,119 @@
+.container{
+    max-width: 1430px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.bg_container{
+    background-color: #E6FDF8;
+
+}
+
+#item_nav_link {
+    color: #333333 !important;
+}
+
+#item_nav_link:hover {
+    color: #FBB03B !important;
+}
+
+.banner_heading {
+    width: 75%;
+}
+
+.learnMore{
+    width: 196px;
+    margin-top: 40px;
+    background: #FBB03B;
+    border: 2px solid #1B1464;
+    border-radius: 50px;
+    color: white;
+    font-weight: 400;
+    line-height: 45px;
+}
+
+.nav_logo {
+    width: 250px;
+    height: auto;
+}
+
+.nav_font {
+    margin-left: 25px;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #333333;
+}
+
+.header_btn {
+    width: 196px;
+    height: 57px;
+
+}
+
+.nav_font:hover {
+    color: #FBB03B;
+}
+
+.active {
+    color: #FBB03B;
+}
+
+.first_title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 45px;
+    color: #FBB03B;
+}
+
+.second_title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 62px;
+    color: #333333;
+}
+
+.third_title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 45px;
+    color: #656565;
+}
+
+.landing_ft span {
+    width: 100%!important;
+    margin-bottom: -5px!important;
+}
+
+.landing_logos {
+    height: 160px;
+    background: #1B1464;
+}
+
+.gradient_block {
+    width: 100%!important;
+    margin-bottom: -5px!important;
+}
+
+@media screen and (max-width: 1540px){
+    .landing_logos {
+        padding: 0 20px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .banner_heading{
+        width: 100%;
+        text-align: center;
+        font-size: 30px !important;
+    }
+    .banner_image{
+        margin-top: 40px;
+    }
+
+}

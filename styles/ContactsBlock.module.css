@@ -1,0 +1,78 @@
+.contacts_container {
+  min-height: 510px;
+  padding-top: 70px;
+  background-color: #1B1464;
+}
+
+.main_container {
+  max-width: 1430px;
+  margin: 0 auto;
+}
+
+.inside_container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.contacts_block_card_item {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.block_card_item_title {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  line-height: 45px;
+}
+
+.block_card_item_text {
+  color: #D2D2D2;
+  font-family: 'Poppins', sans-serif;
+  line-height: 30px;
+}
+
+.card_item_text {
+  padding: 5px 1px;
+  margin-right: 8px;
+  border: 1px solid #EEEEEE;
+}
+
+.title_first {
+  margin-top: 5px;
+  color: #D2D2D2;
+  font-family: 'Lato', sans-serif;
+  line-height: 30px;
+}
+
+.title_second {
+  margin-bottom: 8px;
+  color: #848484;
+  font-family: 'Lato', sans-serif;
+  line-height: 30px;
+}
+
+.custom_height {
+  height: 110px;
+}
+
+.custom_width {
+  max-width: 350px;
+}
+
+@media screen and (max-width: 1050px){
+  .inside_container {
+    flex-wrap: wrap;
+    justify-content: space-around!important;
+  }
+
+  .contacts_block_card {
+    margin-bottom: 20px!important;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .inside_container {
+    flex-direction: column;
+  }
+}
