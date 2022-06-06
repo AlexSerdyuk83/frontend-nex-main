@@ -45,7 +45,7 @@ const cardsContent = [
 
 export const Product = () => {
   return (
-    <div className={clsx(styles.product_container)}>
+    <div id="processes" className={clsx(styles.product_container)}>
       <div className={clsx(styles.main_container)}>
         <div className={clsx(styles.inside_container)}>
           <Titles

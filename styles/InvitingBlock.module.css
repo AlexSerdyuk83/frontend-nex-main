@@ -13,8 +13,8 @@
   padding: 80px 0;
 }
 
-.header_img span {
-  width: 100%!important;
+.header_img {
+  height: 70px;
 }
 
 .inviting_block_text {

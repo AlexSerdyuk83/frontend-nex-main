@@ -4,7 +4,7 @@ import styles from "../styles/ContactsBlock.module.css";
 
 export const ContactsBlock = () => {
   return (
-    <div className={clsx(styles.contacts_container)}>
+    <div id="contacts" className={clsx(styles.contacts_container)}>
       <div className={clsx(styles.main_container)}>
         <div className={clsx(
           styles.inside_container,
@@ -43,7 +43,7 @@ export const ContactsBlock = () => {
               <div className={clsx(styles.block_card_item_title)}>
                 Contact Info
               </div>
-              <div className={clsx(styles.block_card_item_text, 'mt-4')}>
+              <div className={clsx(styles.block_card_item_text, styles.title_first, 'mt-4')}>
                 admin@reworkedrei.com
               </div>
             </div>

@@ -1,10 +1,5 @@
 import React from "react";
 import clsx from "clsx";
-import { useUser } from "@auth0/nextjs-auth0";
-import { Loader } from "../components/Loader";
-import Upload from "./upload";
-import Image from "next/image";
-import Link from "next/link";
 import { Pricing } from "../components/Pricing";
 import banner from '../public/assests/banner-1.svg'
 import landing_ft_bg_img from '../public/assests/home-ft-bg-img.png'
@@ -13,7 +8,7 @@ import icon from '../public/assests/fm-@.png'
 import diagram from '../public/assests/fm-diagram.png'
 import fox from '../public/assests/fm-fox.png'
 import lighting from '../public/assests/fm-lightning.png'
-import logo from '../public/assests/fm-logo.png'
+import logo_lg from '../public/assests/fm-logo.png'
 import number from '../public/assests/fm-number.png'
 import tv from '../public/assests/fm-tv.png';
 import gradient from '../public/assests/gradient-block.png';
@@ -26,6 +21,8 @@ import {PartnersBlock} from '../components/PartnersBlock';
 import {InvitingBlock} from '../components/InvitingBlock';
 import {Footer} from '../components/Footer';
 import {ContactsBlock} from '../components/ContactsBlock';
+import {Navigation} from '../components/Navigation';
+import {Button} from '../components/Button';
 
 
 const logos = [
@@ -36,23 +33,17 @@ const logos = [
   diagram,
   lighting,
   icon,
-  logo
-]
-
-
+  logo_lg
+];
 
 export default function Home() {
-    const { user, isLoading } = useUser();
-    if(isLoading) return <Loader/>
-    if(user) {
-        return <Upload/>
-    }
-
-
     return (
         <>
             <div className={styles.bg_container}>
                 <div className={clsx(styles.container)}>
+
+                  <Navigation/>
+
                     <div className="row px-5">
                         <div className="col-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center align-items-center align-items-sm-center align-items-lg-start ">
                             <p className={clsx(styles.first_title)}>Innovating REI</p>
@@ -68,17 +59,20 @@ export default function Home() {
                             >
                                 Harnassing AI to hyper target your potential clients
                             </p>
-                            <button className={styles.learnMore}><Link href='/api/auth/login'>Learn More</Link></button>
+                          <Button
+                            title={"Learn More"}
+                            customClass={clsx(styles.header_btn)}
+                          />
                         </div>
                         <div className="col-12 col-md-6 col-lg-6 text-center">
                             <div className={styles.banner_image}>
-                                <Image src={banner} />
+                              <img src={banner.src} alt="Banner"/>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className={clsx(styles.landing_ft)}>
-                    <Image src={landing_ft_bg_img}/>
+                <div>
+                    <img className={clsx(styles.landing_ft)} src={landing_ft_bg_img.src} alt=""/>
                 </div>
             </div>
 
@@ -90,7 +84,7 @@ export default function Home() {
                     {
                       logos.map((logo, idx) => (
                         <div key={idx}>
-                          <Image src={logo}/>
+                          <img src={logo.src} alt="Logo"/>
                         </div>
                       ))
                     }
@@ -102,7 +96,7 @@ export default function Home() {
             <Processes/>
 
             <div className={clsx(styles.gradient_block)}>
-              <Image src={gradient}/>
+              <img src={gradient.src} alt=""/>
             </div>
 
             <Product/>

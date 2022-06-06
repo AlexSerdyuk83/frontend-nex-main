@@ -17,6 +17,11 @@
   background: #FFFFFF;
 }
 
+.google_prt_size {
+  width: 230px;
+  height: 86px;
+}
+
 @media screen and (max-width: 700px){
   .partners_item {
     margin: 10px;

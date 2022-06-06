@@ -14,9 +14,9 @@ export const Card = ({
       <p id="first_title" className={clsx(styles.card_item_title, 'text-center')} style={titleStyles}>
         { title }
       </p>
-      <p className={clsx(styles.card_item_text, 'text-center')} style={textStyles}>
+      <div className={clsx(styles.card_item_text, 'text-center')} style={textStyles}>
         { text }
-      </p>
+      </div>
     </div>
   );
 };

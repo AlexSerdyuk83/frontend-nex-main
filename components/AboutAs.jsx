@@ -1,7 +1,6 @@
 import React from "react";
 import clsx from "clsx";
 import styles from "../styles/AboutUs.module.css";
-import Image from "next/image";
 import header_img from '../public/assests/product-hd-bg-img.png';
 import footer_img from '../public/assests/product-ft-bg-img.png';
 import {Card} from './Card';
@@ -30,9 +29,9 @@ const cardsContent = [
 
 export const AboutAs = () => {
   return (
-    <div className={clsx(styles.about_us_container)}>
-      <div className={clsx(styles.header_img)}>
-        <Image src={header_img}/>
+    <div id="about_us" className={clsx(styles.about_us_container)}>
+      <div>
+        <img className={clsx(styles.hd_image, 'w-100')} src={header_img.src} alt="Image"/>
       </div>
       <div className={clsx(styles.main_container)}>
         <div
@@ -72,8 +71,8 @@ export const AboutAs = () => {
           </div>
         </div>
       </div>
-      <div className={clsx(styles.about_us_footer_img, 'mt-4')}>
-        <Image src={footer_img}/>
+      <div className="mt-4">
+        <img className={clsx(styles.hd_image, 'w-100')} src={footer_img.src} alt="Image"/>
       </div>
     </div>
   )

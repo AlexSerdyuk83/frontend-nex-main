@@ -21,17 +21,6 @@
     width: 75%;
 }
 
-.learnMore{
-    width: 196px;
-    margin-top: 40px;
-    background: #FBB03B;
-    border: 2px solid #1B1464;
-    border-radius: 50px;
-    color: white;
-    font-weight: 400;
-    line-height: 45px;
-}
-
 .nav_logo {
     width: 250px;
     height: auto;
@@ -49,7 +38,7 @@
 .header_btn {
     width: 196px;
     height: 57px;
-
+    margin-top: 40px;
 }
 
 .nav_font:hover {
@@ -86,7 +75,7 @@
 
 .landing_ft span {
     width: 100%!important;
-    margin-bottom: -5px!important;
+    height: 110px;
 }
 
 .landing_logos {
@@ -96,7 +85,7 @@
 
 .gradient_block {
     width: 100%!important;
-    margin-bottom: -5px!important;
+    /*margin-bottom: -5px!important;*/
 }
 
 @media screen and (max-width: 1540px){

@@ -12,10 +12,6 @@
   margin: 0 auto;
 }
 
-.header_img span {
-  width: 100%!important;
-}
-
 .container{
   max-width: 1430px;
   margin: 0 auto;
@@ -73,8 +69,12 @@
   height: 449px;
 }
 
-.about_us_footer_img span {
-  width: 100%!important;
+.hd_image {
+  height: 70px;
+}
+
+.ft_image {
+  height: 70px;
 }
 
 @media screen and (max-width: 1540px){

@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import styles from '../styles/Pricing.module.css'
-import Image from "next/image";
 import bg_header from "../public/assests/pricing-gradient-hd.png";
 import bg_footer from "../public/assests/pricing-gradient-ft.png";
 import {Titles} from './Titles';
@@ -87,8 +86,8 @@ const thirdTitleRender = () => {
 
 export const Pricing = () => {
   return (
-    <div className={clsx(styles.pricing_container)}>
-      <Image src={bg_header}/>
+    <div id="pricing" className={clsx(styles.pricing_container)}>
+      <img className={clsx(styles.hd_image, 'w-100')} src={bg_header.src} alt="Image"/>
 
       <div className={clsx(styles.main_container)}>
         <div className={clsx(styles.inside_container)}>
@@ -122,96 +121,7 @@ export const Pricing = () => {
         </div>
       </div>
 
-      <Image src={bg_footer}/>
+      <img className={clsx(styles.ft_image, 'w-100')} src={bg_footer.src} alt="Image"/>
     </div>
-
-
-    // <>
-    //   <div style={{ backgroundColor: "#1B1464" }} className="text-center pt-5">
-    //     <h1 style={{ color: "#016ECC" }} className="py-3">
-    //       Pricing
-    //     </h1>
-    //     <h2 className={clsx(styles.price_desc, "py-2")}>
-    //       Increase deal velocity, <br /> save money or both!
-    //     </h2>
-    //     <h3
-    //       style={{ color: "#D12B2B", fontWeight: "bold", fontSize: "36px" }}
-    //       className={clsx(styles.price_offer, "py-3")}
-    //     >
-    //       NOW! Limited time and users! <br /> FREE to sign-up and process 1 file
-    //       up to 3,000 records.
-    //     </h3>
-    //     <div
-    //       className={clsx(
-    //         styles.container,
-    //         "row my-3 p-4 d-flex justify-content-evenly"
-    //       )}
-    //     >
-    //       <div
-    //         style={{ width: "350px", borderRadius: "20px" }}
-    //         className="col-12 col-sm-12 col-md-4 col-lg-4 p-4 my-2 shadow-sm bg-white"
-    //       >
-    //         <h2 style={{ color: "#1B1464" }} className="text-center">
-    //           Solo
-    //         </h2>
-    //         <p style={{ fontSize: "16px", fontWeight: "bold", opacity: 0.7 }}>
-    //           {" "}
-    //           Casual investor
-    //         </p>
-    //         <div className="d-flex text-start">
-    //           <ul style={{ fontSize: "18px", opacity: 0.8 }}>
-    //             <li>$129 per month</li>
-    //             <li>No commitment, cancel any time</li>
-    //             <li>2,400 records processed a month</li>
-    //             <li>Savings of over $650 a month!</li>
-    //             <li>Supports DataTree & Prycd data feeds</li>
-    //           </ul>
-    //         </div>
-    //       </div>
-    //       <div
-    //         style={{ width: "340px", borderRadius: "20px" }}
-    //         className="col-12 col-sm-12 col-md-4 col-lg-4 p-4 my-2 shadow-sm  bg-white"
-    //       >
-    //         <h2 style={{ color: "#1B1464" }} className="text-center">
-    //           Pro
-    //         </h2>
-    //         <p style={{ fontSize: "16px", fontWeight: "bold", opacity: 0.7 }}>
-    //           {" "}
-    //           Full time
-    //         </p>
-    //         <div className="d-flex text-start">
-    //           <ul style={{ fontSize: "18px", opacity: 0.8 }}>
-    //             <li>$289 per month</li>
-    //             <li>No commitment, cancel any time</li>
-    //             <li>8,000 records processed a month</li>
-    //             <li>Savings over $2,300 a month!</li>
-    //             <li>Supports DataTree & Prycd data feeds</li>
-    //           </ul>
-    //         </div>
-    //       </div>
-    //       <div
-    //         style={{ width: "340px", borderRadius: "20px" }}
-    //         className="col-12 col-sm-12 col-md-4 col-lg-4 p-4 my-2 shadow-sm  bg-white"
-    //       >
-    //         <h2 style={{ color: "#1B1464" }} className="text-center">
-    //           Enterprise
-    //         </h2>
-    //         <p style={{ fontSize: "16px", fontWeight: "bold", opacity: 0.7 }}>
-    //           {" "}
-    //           Multi Purpose Firm
-    //         </p>
-    //         <div className="d-flex text-start">
-    //           <ul style={{ fontSize: "18px", opacity: 0.8 }}>
-    //             <li>$412 per month</li>
-    //             <li>No commitment, cancel any time</li>
-    //             <li>12,000 records processed a month</li>
-    //             <li>Savings over $3,400 a month!</li>
-    //             <li>Supports DataTree, Prycd & custom data feeds</li>
-    //           </ul>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </>
   );
 };

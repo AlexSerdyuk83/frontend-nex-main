@@ -18,9 +18,9 @@ export const Titles = ({
       <p className={clsx(styles.description_second, secondTitleClass)}>
         { secondTitle }
       </p>
-      <p className={clsx(styles.description_third, thirdTitleClass)}>
+      <div className={clsx(styles.description_third, thirdTitleClass)}>
         { thirdTitle }
-      </p>
+      </div>
     </div>
   );
 };
