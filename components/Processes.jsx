@@ -11,8 +11,9 @@ export const Processes = () => {
     <div id="product" className={clsx(styles.processes_container)}>
       <div className={clsx(styles.main_container)}>
         <div className={clsx(styles.inside_container)}>
-          <div className="row mx-0 py-4">
-            <div className="col-sm-6 ps-0">
+          <div className={clsx(styles.row_item, "row mx-0 py-4")}>
+          {/*<div className="row mx-0 py-4">*/}
+            <div className={clsx(styles.first_img, "col-sm-6 ps-0")}>
               <img src={first_img.src} alt="Image"/>
             </div>
             <div className="col-sm-6 pe-0">
@@ -30,7 +31,7 @@ export const Processes = () => {
               />
             </div>
           </div>
-          <div className="row mx-0 py-4">
+          <div className={clsx(styles.row_item, "row mx-0 py-4")}>
             <div className="col-sm-6 ps-0">
               <Titles
                 firstTitle={'Innnovating REI'}
@@ -45,7 +46,7 @@ export const Processes = () => {
                 customClass={clsx(styles.second_btn, styles.btn)}
               />
             </div>
-            <div className="col-sm-6 pe-0 content-image-container">
+            <div className={clsx(styles.second_img, "col-sm-6 pe-0")}>
               <img src={second_img.src} alt="Image"/>
             </div>
           </div>

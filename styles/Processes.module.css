@@ -52,3 +52,18 @@
   margin-top: 80px;
 }
 
+@media screen and (max-width: 1140px){
+  .row_item {
+    flex-direction: column!important;
+    align-content: center!important;
+  }
+
+  .first_img {
+    min-width: 523px;
+    margin-bottom: 30px;
+  }
+
+  .second_img {
+    min-width: 448px;
+  }
+}
